@@ -1,0 +1,41 @@
+.sliderWrap {
+  h2 {
+    font-size: 1.5em;
+    font-display: block;
+    font-weight: 600;
+  }
+  h2::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 34em;
+}
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.imageTitle {
+  font-size: 1.5em;
+  font-display: block;
+  font-weight: 600;
+  text-transform: capitalize;
+
+  @media (max-width: 400px) {
+    font-size: 1em;
+  }
+}
+
+.arrow {
+  font-size: 2em;
+  cursor: pointer;
+}
+

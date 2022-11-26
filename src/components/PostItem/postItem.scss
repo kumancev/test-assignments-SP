@@ -1,0 +1,69 @@
+$blue: #1677ff;
+$pink: #dd33dd;
+
+.postItem {
+  margin-bottom: 1em;
+  padding: 1.5em;
+  overflow: hidden;
+  background-color: #fff;
+
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+
+  &:hover {
+    border: 1px solid $blue;
+    box-shadow: 0 0 0 1px $blue;
+  }
+
+  h3 {
+    margin-top: 1.6em;
+    text-transform: capitalize;
+  }
+
+  p {
+    color: rgb(109, 109, 109);
+  }
+  p::first-letter {
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 0.8em;
+  }
+}
+
+.postActions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.postDelete {
+  border: none;
+  background: none;
+  color: $pink;
+  font-weight: bolder;
+
+  &:hover {
+    color: #830083;
+    cursor: pointer;
+  }
+}
+
+.readBtn {
+  border: 2px solid #1677ff;
+  border-radius: 6px;
+  background-color: #1677ff;
+  color: #fff;
+  margin-top: 1em;
+  padding: 8px 16px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1a5cb8;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 0.8em;
+  }
+}

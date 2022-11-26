@@ -1,0 +1,45 @@
+.commentItem {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1em;
+
+  @media (max-width: 300px) {
+    font-size: 0.6em;
+  }
+}
+
+.commentAuthor {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-style: italic;
+    margin-left: 0.6em;
+  }
+
+  @media (max-width: 300px) {
+    flex-direction: column;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.commentBody {
+  h4 {
+    margin-top: 0.4em;
+  }
+  h4::first-letter {
+    text-transform: uppercase;
+  }
+
+  p {
+    color: rgb(109, 109, 109);
+  }
+  p::first-letter {
+    text-transform: uppercase;
+  }
+}

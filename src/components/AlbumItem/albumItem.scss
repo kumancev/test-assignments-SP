@@ -1,0 +1,59 @@
+$blue: #1677FF;
+$pink: #dd33dd;
+
+.albumItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  padding: 1.5em;
+  overflow: hidden;
+  background-color: #fff;
+
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+
+  &:hover {
+    border: 1px solid $blue;
+    box-shadow: 0 0 0 1px $blue;
+  }
+
+
+  h3 {
+    margin-top: 1.6em;
+    text-transform: capitalize;
+  }
+
+  p {
+    font-weight: 600;
+    // font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  button {
+    border: 2px solid #1677FF;
+    border-radius: 6px;
+    background-color: #1677FF;
+    color: #fff;
+    margin-top: .6em;
+    padding: 8px 16px;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: #1a5cb8;
+    }
+
+    @media (max-width: 300px) {
+      font-size: 0.8em;
+    }
+  }
+
+  @media (max-width: 300px) {
+    font-size: 0.6em;
+  }
+}
+
+.imgTemplate {
+  width: auto;
+}
+

@@ -1,0 +1,28 @@
+.postInfo {
+  background-color: rgb(215, 231, 253);
+  border-radius: 8px;
+  padding: 2em;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.08);
+  margin-bottom: 2em;
+  overflow: hidden;
+
+  h1 {
+    text-transform: capitalize;
+  }
+
+  p::first-letter {
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 0.6em;
+  }
+}
+
+.postComments {
+  background-color: rgb(221, 227, 227);
+  border-radius: 8px;
+  padding: 2em;
+  box-shadow:4px 4px 10px rgba(0,0,0,0.08);
+}
+
