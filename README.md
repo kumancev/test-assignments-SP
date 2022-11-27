@@ -25,15 +25,11 @@
 #### `src/assets`
 Хранятся медиа-файлы приложения  
 ## CSS
-Для стилизации использовал обычный **SCCS**. 
-В данном проекте, к сожалению не придерживался методологий по типу [БЭМ](https://ru.bem.info/methodology/css/) и спец "настроек" по типу [CSS Modules](https://github.com/css-modules/css-modules) или [StyledComponents](https://styled-components.com/) так как использовал стили больше для набросков и небольших элементов - основой стилизации была библиотека [Ant Design](https://ant.design/)
-
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
-
+Для стилизации использовал обычный **SCCS**.
+В данном проекте, к сожалению, не придерживался методологий по типу [БЭМ](https://ru.bem.info/methodology/css/) или спец "lib" по типу [CSS Modules](https://github.com/css-modules/css-modules) или [StyledComponents](https://styled-components.com/) так как использовал стили больше для набросков и небольших изменениях - основой стилизации была библиотека [Ant Design](https://ant.design/)
 ## Tests
 #### `src/__test__/`
 Написал пару тестов (больше не успел). До этого с тестированием именно React приложений почти не работал. На данный момент изучил статьи о тестировании React/Redux приложений, разобрался что как.
-
 
 # Getting Started
 
@@ -51,9 +47,6 @@ Open [http://localhost:5173/](http://localhost:5173/) to view it in your browser
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-Runs the app tests 
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -61,4 +54,12 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+<!-- ### `npm test`
+add information if you make tests -->
+
+### `npm test`
+Runs the app tests 
+
+
 
