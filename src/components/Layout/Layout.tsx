@@ -30,7 +30,6 @@ export default function LayoutApp({ children }: LayoutAppProps) {
         <Menu
           theme="dark"
           mode="inline"
-          style={{}}
           items={[
             {
               key: '1',

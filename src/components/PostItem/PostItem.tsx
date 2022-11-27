@@ -30,7 +30,7 @@ export default function PostItem({ userId, id, title, body }: PostType) {
       <h3>{title}</h3>
       <p>{body}</p>
       <Link to={`/posts/${id}`} className="btn btn-primary">
-        <button className='readBtn'>Read more</button>
+        <button className='readBtn'>More</button>
       </Link>
     </div>
   )
