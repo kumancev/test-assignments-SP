@@ -4,9 +4,8 @@ import {
   createAsyncThunk,
   AnyAction,
 } from "@reduxjs/toolkit";
-import { PostType } from "../../models/post.type";
+import { PostType } from "../../models/post";
 import axios from "axios";
-
 
 type PostsState = {
   list: PostType[];

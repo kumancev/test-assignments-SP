@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import { useAppDispatch } from '../../app/hooks'
 import { deletePost } from '../../features/posts/postsSlice';
-import { PostType } from '../../models/post.type';
+import { PostType } from '../../models/post';
 import "./postItem.scss";
 
 export default function PostItem({ userId, id, title, body }: PostType) {

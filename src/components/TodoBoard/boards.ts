@@ -1,4 +1,4 @@
-import { TodoType } from "../../models/todo.type";
+import { TodoType } from "../../models/todo";
 
 export type Board = {
   id: string;

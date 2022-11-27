@@ -4,7 +4,7 @@ import {
   createAsyncThunk,
   AnyAction,
 } from "@reduxjs/toolkit";
-import { PhotoType } from "../../models/album.type";
+import { PhotoType } from "../../models/album";
 import axios from "axios";
 
 type PhotosState = {

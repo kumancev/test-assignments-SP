@@ -1,6 +1,6 @@
 import { Avatar } from "antd";
 import Ava from "../../assets/img/commentAva.svg";
-import { CommentType } from "../../models/comment.type";
+import { CommentType } from "../../models/comment";
 import "./comment.scss";
 
 

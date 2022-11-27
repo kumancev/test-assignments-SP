@@ -4,9 +4,8 @@ import {
   createAsyncThunk,
   AnyAction,
 } from "@reduxjs/toolkit";
-import { CommentType } from "../../models/comment.type";
+import { CommentType } from "../../models/comment";
 import axios from "axios";
-
 
 type CommentsState = {
   list: CommentType[];
@@ -14,24 +13,23 @@ type CommentsState = {
   error: string | null;
 };
 
+export const fetchComments = createAsyncThunk<
+  CommentType[],
+  string,
+  { rejectValue: string }
+>("posts/fetchComments", async function (id, { rejectWithValue }) {
+  try {
+    const response = await axios.get(
+      `https://jsonplaceholder.typicode.com/posts/${id}/comments`
+    );
 
-export const fetchComments = createAsyncThunk<CommentType[], string, { rejectValue: string }>(
-  "posts/fetchComments",
-  async function (id, { rejectWithValue }) {
-    try {
-      const response = await axios.get(
-        `https://jsonplaceholder.typicode.com/posts/${id}/comments`
-      );
+    const data = await response.data;
 
-      const data = await response.data;
-
-      return data;
-    } catch (e) {
-      return rejectWithValue("Server Error!");
-    }
+    return data;
+  } catch (e) {
+    return rejectWithValue("Server Error!");
   }
-);
-
+});
 
 const initialState: CommentsState = {
   list: [],
@@ -59,7 +57,6 @@ const commentsSlice = createSlice({
       });
   },
 });
-
 
 export default commentsSlice.reducer;
 

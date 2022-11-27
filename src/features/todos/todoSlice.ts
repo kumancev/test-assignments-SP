@@ -4,7 +4,7 @@ import {
   createAsyncThunk,
   AnyAction,
 } from "@reduxjs/toolkit";
-import { TodoType } from "../../models/todo.type";
+import { TodoType } from "../../models/todo";
 import axios from "axios";
 
 type TodosState = {
