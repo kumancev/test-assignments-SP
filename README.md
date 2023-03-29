@@ -1,4 +1,4 @@
-# Тестовое задание Soft Project 
+# Admin Panel
 ## Стек
 - React
 - TypeScript
@@ -29,7 +29,7 @@
 В данном проекте, к сожалению, не придерживался методологий по типу [БЭМ](https://ru.bem.info/methodology/css/) или спец "lib" по типу [CSS Modules](https://github.com/css-modules/css-modules) или [StyledComponents](https://styled-components.com/) так как использовал стили больше для набросков и небольших изменениях - основой стилизации была библиотека [Ant Design](https://ant.design/)
 ## Tests
 #### `src/__test__/`
-Написал пару тестов (больше не успел). До этого с тестированием именно React приложений почти не работал. На данный момент изучил статьи о тестировании React/Redux приложений, разобрался что как.
+Написал пару тестов
 
 # Getting Started
 
